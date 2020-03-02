@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2035
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wpf.UI", "Wpf.UI\Wpf.UI.csproj", "{03FC98A0-DFD1-4026-9E7B-324AD344BD9F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wpf.Model", "Wpf.Model\Wpf.Model.csproj", "{E04301F6-39AE-4F3A-8F91-B1629EA042AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wpf.ViewModel", "Wpf.ViewModel\Wpf.ViewModel.csproj", "{0AECE7E5-E50B-400F-8480-DB6DDB9C5692}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{03FC98A0-DFD1-4026-9E7B-324AD344BD9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03FC98A0-DFD1-4026-9E7B-324AD344BD9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03FC98A0-DFD1-4026-9E7B-324AD344BD9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03FC98A0-DFD1-4026-9E7B-324AD344BD9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E04301F6-39AE-4F3A-8F91-B1629EA042AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E04301F6-39AE-4F3A-8F91-B1629EA042AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E04301F6-39AE-4F3A-8F91-B1629EA042AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E04301F6-39AE-4F3A-8F91-B1629EA042AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AECE7E5-E50B-400F-8480-DB6DDB9C5692}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AECE7E5-E50B-400F-8480-DB6DDB9C5692}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AECE7E5-E50B-400F-8480-DB6DDB9C5692}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AECE7E5-E50B-400F-8480-DB6DDB9C5692}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BCCE1B04-6ADA-4055-B31F-AD7131C064DB}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,31 @@
+﻿<Window x:Class="Wpf.UI.NewWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpf.UI"
+        mc:Ignorable="d"
+        Title="Registration" Height="350" Width="300" ResizeMode="NoResize" Loaded="Window_Loaded">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.1*"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Button Height="25" Width="80" HorizontalAlignment="Left" Content="Back" Click="Button_Click"></Button>
+
+        <StackPanel Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">
+        <TextBlock  Text="Username:"></TextBlock>
+        <TextBox MaxLength="30" Text="{Binding NewUser.UserName,NotifyOnValidationError=True, ValidatesOnNotifyDataErrors=True}" Validation.Error="Valid_Error" Margin="0,0,0,5" Width="120" Height="25"></TextBox>
+        <TextBlock  Text="Password:"></TextBlock>
+        <TextBox MaxLength="30" TextChanged="tb_TextChanged" Name="tbPass1" Text="{Binding NewUser.Password,NotifyOnValidationError=True}" Validation.Error="Valid_Error" Margin="0,0,0,5" Width="120" Height="25"></TextBox>
+        <TextBlock Text="Confirm Password:"></TextBlock>
+        <TextBox Name="tbPass2" Text="{Binding PassValid}" TextChanged="tb_TextChanged" Validation.Error="Valid_Error" Margin="0,0,0,5" Width="120" Height="25"></TextBox>
+        <TextBlock Text="Admin:"></TextBlock>
+        <StackPanel Margin="0,0,0,5" Orientation="Horizontal">
+            <RadioButton Name="rbDa" Checked="Checked" Content="Yes" GroupName="Admin"/>
+            <RadioButton Name="rbNe" Checked="Checked" Content="No"  GroupName="Admin"></RadioButton>
+        </StackPanel>
+        <Button Command="{Binding SaveCommand}" Height="25" Width="80" HorizontalAlignment="Left" Content="Confirm"></Button>
+    </StackPanel>
+    </Grid>
+</Window>
