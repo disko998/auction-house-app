@@ -1,3 +1,7 @@
-# auction-house-app
+# Auction House
 
-C# - SQL project, that helps you to sell your stuff :D
+### Auction house app allows you to bid and sell stuff
+
+* C#
+  -MVVC
+* MsSQL
