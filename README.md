@@ -4,4 +4,4 @@
 
 * C#
   -MVVC
-* MsSQL
+* SQL
